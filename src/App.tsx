@@ -1,17 +1,27 @@
-import "./styles.css";
-import Skill from "./components/skillComponent";
-import About from "./components/about";
-import Text from "./components/textAboutMe";
-import Jobs from "./components/jobs";
-import Projects from "./components/projects";
+import Background from "./components/Background";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 export default function App() {
   return (
-    <div className="App">
-      <About />
-      <Skill />
-      <Text />
-      <Jobs />
-      <Projects />
-    </div>
+    <>
+      <Background />
+      <Nav />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
